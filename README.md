@@ -4,7 +4,10 @@ This repo contains a small script `laser.py` that controls an ultra-fast galvani
 
 ![](laser.jpg)
 
-To use, clone the directory and copy the script into whatever directory you need it.
+## Installation
+1. Clone the directory and copy the script into wherever you need it
+2. Install the `pyserial` package: `pip install pyserial`
+3. Plug in the galvanic mirror laser
 
 The laser operates in $x \times y$ coordinate space, restricted to $(0, 800)$ in both directions.
 
