@@ -23,12 +23,10 @@ You can also use it in a python script like so:
 ```python
 import laser
 with laser.Laser() as l:
-    l.on()
     l.move(0, 0)       # Upper left
     l.move(200, 200)
     l.move(800, 800)   # Bottom right
     l.move(1000, 1000) # No effect; out of bounds
-    l.off()
 ```
 
 ## Acknowledgements
