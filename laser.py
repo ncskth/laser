@@ -94,13 +94,13 @@ def parse_char(laser, ch, state=None):
     moves = {"w": (-100, 0), "s": (100, 0), "a": (0, -100), "d": (0, 100)}
 
     if state is None:
-        state = (800, 800)
+        state = (4095, 4095)
 
     if ch in moves.keys():
         state = (state[0] + moves[ch][0], state[1] + moves[ch][1])
-        state = (min(800, max(0, state[0])), min(800, max(0, state[1])))
+        state = (min(4095, max(0, state[0])), min(4095, max(0, state[1])))
         laser.move(*state)
-    if ch == "q":
+    elif ch == "q":
         laser.off()
         return None
     else:
