@@ -83,6 +83,9 @@ class Laser:
     def on(self):
         self.send("!L=+")
 
+    def blink(self, period):
+        self.send(f"!L={period}")
+
     def off(self):
         self.send("!L=-")
 
